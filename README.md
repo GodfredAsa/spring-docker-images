@@ -14,6 +14,11 @@ You can access the API documentation [here](https://sfg-beer-works.github.io/bre
 #### CREATING A BASIC DOCKER FILE
 DOCKER-BASE
 #### Commands
+simple Dockerfile 
 `docker build -f ./src/main/dockerbase/Dockerfile -t kbe-rest .`
 `docker run -p 8080:8080 -d kbe-rest`
 # spring-docker-images-100
+
+Layered Dockerfile
+`docker build -f ./src/main/docker/Dockerfile -t kbe-rest .`
+`docker run -p 8080:8080 -d kbe-rest`
